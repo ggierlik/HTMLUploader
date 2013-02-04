@@ -1,0 +1,171 @@
+body {
+    color: white;
+    background-color: #333;
+    font-size: 14px;
+    font-family: verdana, helvetica;
+}
+
+div.upload-area {
+    font-size: 36px;
+    text-align: center;
+    margin: auto;
+    border: 1px dotted gray;
+    padding: 1em;
+}
+
+div.call-to-action {
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+}
+
+div.info {
+    font-size: 14px;
+}
+
+div.or {
+    padding: 1ex;
+}
+
+div#browse-button-wrapper {
+    background-color: #0063DC;
+    border-radius: 6px;
+    border: 1px solid white;
+    width: 40%;
+    font-size: 75%;
+    padding: 1ex;
+    margin: auto;
+    cursor: pointer;
+}
+
+div#drop-area {
+    border: 1px dotted #d3d3d3;
+    width: 100%;
+    height: 360px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+input#browse-button {
+    display: none;
+}
+
+div.photoBox {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #333333;
+    float: left;
+    padding: 5px;
+}
+
+img.photo {
+    max-width: 180px;
+    max-height: 180px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 2px;
+    border: 3px solid #333;
+}
+
+img.photo.selected {
+    border: 2px solid #ff1493;
+}
+
+div.imageContainer {
+    height: 220px;
+}
+
+div#file-list {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid transparent;
+    margin: 1em auto;
+}
+
+input[type=button] {
+    color: navy;
+    /*background-color: #ff8c00;*/
+    background-color: orange;
+    border-radius: 3px;
+    border: 1px solid white;
+    min-width: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1ex;
+    margin: 1ex 1em;
+    float: left;
+}
+
+input#upload-button {
+    /*background-color: #87cefa;
+    color: gray;*/
+    color: white;
+    background-color: #0063DC;
+    border-radius: 3px;
+    border: 1px solid white;
+    width: 160px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1ex;
+    margin: 1ex 1em;
+    float: right;
+    cursor: pointer;
+}
+
+div.name {
+    font-size: 12px;
+    color: #d3d3d3;
+    max-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.editbox {
+    font-size: 13px;
+    color: #d3d3d3;
+    margin-top: 1ex;
+    cursor: pointer;
+}
+
+div.editbox span {
+    max-height: 40px;
+    text-overflow: ellipsis;
+}
+
+div.editbox textarea {
+    font-size: 12px;
+    font-family: verdana, helvetica;
+    color: #d3d3d3;
+    height: auto;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 2px;
+}
+
+textarea.box {
+    color: black!important;
+    background-color: white!important;
+    border: 1px solid gray;
+}
+
+div.panel {
+    overflow: hidden;
+    color: black;
+    background-color: #d3d3d3;
+    height: 60px;
+}
+
+select {
+    font-family: verdana, helvetica;
+    color: black;
+    background-color: #d3d3d3;
+    border-radius: 3px;
+    border: 1px solid white;
+    width: 220px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1ex;
+    margin: 1ex 1em;
+    float: left;
+}

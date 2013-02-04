@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Upload WAYN Hackathon 2</title>
+	<link rel="stylesheet" type="text/css" href="http://www.wayn.trunk/upload/upload5.css">
+	<script src="//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
+	<script src="http://www.wayn.trunk/upload/upload5.js"></script>
+</head>
+<body>
+
+<!--<ul id="file-list">
+
+</ul>
+-->
+<div class="upload-area">
+	<div id="drop-area">
+		<div class="call-to-action">Drop photos to upload here!</div>
+		<div class="info">Don't worry. You could edit your photos before uploading&hellip;</div>
+
+		<div class="or">or</div>
+		<div id="browse-button-wrapper">
+			<div class="browse-button-label">Choose photos to upload</div>
+			<input type="file" id="browse-button" multiple accept="image/*" value="">
+		</div>
+	</div>
+	<div id="file-list">
+		<div id="panel" class="panel" style="display: none;">
+			<input type="button" value="Add to album" title="Assign photos below to one of your albums"
+				   onclick="showAlbums()">
+			<select id="albums-list" style="display: none;" xonblur="hideAlbums(this);" xonselect="hideAlbums(this);">
+				<option value='0'>Choose album below</option>
+				<option value='969900'>abc</option>
+				<option value='21397'>Airplanes</option>
+				<option value='1'>Animals</option>
+				<option value='747602'>Balwan</option>
+				<option value='517054'>Bocian</option>
+				<option value='517053'>Bocian</option>
+				<option value='823131'>Buczek May 2008</option>
+				<option value='775605'>Canoe holidays</option>
+				<option value='969901'>cba</option>
+				<option value='970050'>Cover Photos</option>
+				<option value='775601'>Crete</option>
+				<option value='959906'>Dziewczyny</option>
+				<option value='21398'>Favorites</option>
+				<option value='970060'>Gdzieś pod Szczecinem</option>
+				<option value='970045'>Góry Kaczawskie</option>
+				<option value='393260'>Góry Kaczawskie</option>
+				<option value='865683'>Góry Kaczawskie, Dolny Śląsk, Poland</option>
+				<option value='969974'>Hand made Wall-E</option>
+				<option value='446815'>Hania</option>
+				<option value='451754'>Hania</option>
+				<option value='748154'>Hania 2010</option>
+				<option value='751794'>Hania2010</option>
+				<option value='775604'>Holidays</option>
+				<option value='755758'>Honda</option>
+				<option value='14'>Interesting things</option>
+				<option value='970057'>Jamnik Emu i jego Pani</option>
+				<option value='970046'>Jungle Park</option>
+				<option value='954220'>Kolejny etap edukacji</option>
+				<option value='676898'>m2</option>
+				<option value='757919'>Malunki</option>
+				<option value='245462'>May 2008</option>
+				<option value='970047'>Mobile Uploads</option>
+				<option value='724501'>Moje grzybki</option>
+				<option value='708223'>Moje grzybki</option>
+				<option value='7941'>Mucholówka</option>
+				<option value='245472'>Muchołówka 31 Dec 2007</option>
+				<option value='76536'>Muchołówka Autumn 2007</option>
+				<option value='22515'>Muchołówka/Dionaeamuscipula</option>
+				<option value='665000'>Mucholowki</option>
+				<option value='81473'>My Car</option>
+				<option value='626227'>Na czołgu</option>
+				<option value='626214'>Na plaży</option>
+				<option value='775602'>Northen France</option>
+				<option value='970055'>NSL2</option>
+				<option value='713277'>Parada Afrykanska</option>
+				<option value='969945'>Place Album 1</option>
+				<option value='865684'>Playa de las Americas</option>
+				<option value='970048'>Profile Pictures</option>
+				<option value='708219'>Przedstawienie na Zamku</option>
+				<option value='969976'>Schron pod dworcem główym PKP w Szczecinie</option>
+				<option value='969897'>Scuba Diving</option>
+				<option value='775606'>Słowiński Park Narodowy</option>
+				<option value='50088'>Słowiński Park Narodowy</option>
+				<option value='775603'>Spain Holidays</option>
+				<option value='970052'>Święto Niepodległości 2012 -- moje ,,bączki&#39;&#39;.</option>
+				<option value='970051'>Szarlota i okolice -- lipiec 2010</option>
+				<option value='393254'>Tenerife 2008</option>
+				<option value='29743'>test</option>
+				<option value='970054'>Test Upload NSL</option>
+				<option value='969904'>Test Wallpaper</option>
+				<option value='226518'>test2</option>
+				<option value='537426'>test4</option>
+				<option value='970049'>Timeline Photos</option>
+				<option value='2'>Views</option>
+				<option value='626221'>W kałuży</option>
+				<option value='969905'>Wallpapers</option>
+				<option value='969896'>Water sports</option>
+				<option value='890551'>WAYNers in Rumia</option>
+				<option value='373131'>Wesna</option>
+				<option value='14296'>Wesna</option>
+				<option value='504426'>Wesna and graffitti</option>
+				<option value='295257'>Wesna and me</option>
+				<option value='28381'>Wesna birthday party</option>
+				<option value='503262'>Wesna on Tenerife 2008</option>
+				<option value='216301'>Wesna Spring 2008</option>
+				<option value='295238'>Wesna, Jun 2008</option>
+				<option value='245475'>Wierzchowo Jul 2007</option>
+				<option value='969895'>Wildlife</option>
+				<option value='969898'>xxxx</option>
+				<option value='969899'>yyyyy</option>
+				<option value='626212'>Z bałwankiem</option>
+				<option value='708222'>Z gnieciuchami</option>
+				<option value='626213'>Z graffiti w tle</option>
+				<option value='969975'>Zdobycze muchołówki</option>
+				<option value='475915'>Zima</option>
+			</select>
+			<input type="button" value="Remove" title="Removed selected photos" onclick="removeSelected();">
+			<input type="button" value="Rotate" title="Rotate right selected photos" onclick="rotateSelected();">
+			<input id="upload-button" type="button" value="Upload!" title="Upload your photos">
+		</div>
+	</div>
+
+	<div id="preview" xstyle="display: none;"></div>
+
+</div>
+<!--<iframe name="upload-result" style="display: none;"></iframe>-->
+</body>
+</html>
